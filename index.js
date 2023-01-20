@@ -29,8 +29,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(express.static("./build"));
-
 // routes
 app.use("/api", Routes);
 const data = {};

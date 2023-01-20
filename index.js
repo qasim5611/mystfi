@@ -33,6 +33,9 @@ app.use((req, res, next) => {
 app.use("/api", Routes);
 const data = {};
 
+app.use(express.static("./build"));
+
+
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 // Log in to Discord with your client's token
